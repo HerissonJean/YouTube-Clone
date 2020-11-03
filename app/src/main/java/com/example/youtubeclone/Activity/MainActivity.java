@@ -12,6 +12,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.youtubeclone.Adapter.AdapterVideos;
 import com.example.youtubeclone.Model.Videos;
 import com.example.youtubeclone.R;
+import com.miguelcatalan.materialsearchview.MaterialSearchView;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,6 +24,7 @@ import java.util.function.ToLongBiFunction;
     private RecyclerView recyclerView;
     private List<Videos> arrayVideos = new ArrayList<>();
     private AdapterVideos AdapterVideos;
+    private MaterialSearchView searchView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +39,8 @@ import java.util.function.ToLongBiFunction;
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         AdapterVideos = new AdapterVideos(arrayVideos,MainActivity.this);
         recyclerView.setAdapter(AdapterVideos);
+
+        searchView = findViewById(R.id.searchView_toolbar_pesquisa);
 
 
     }

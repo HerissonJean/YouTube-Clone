@@ -56,7 +56,7 @@ public class AdapterVideos extends RecyclerView.Adapter<AdapterVideos.MyViewHold
             super(itemView);
 
             titulo = itemView.findViewById(R.id.text_adapter_titulo);
-            capa = itemView.findViewById(R.id.image_adapter_video);
+         //   capa = itemView.findViewById(R.id.image_adapter_video);
 
         }
     }
