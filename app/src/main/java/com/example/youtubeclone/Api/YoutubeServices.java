@@ -6,7 +6,7 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Query;
 
-public interface Api {
+public interface YoutubeServices {
 
 
     /*
@@ -21,7 +21,7 @@ public interface Api {
 
     /*
     *  https://www.googleapis.com/youtube/v3/search?part=snippet&order=date&maxResults=20&key=AIzaSyAweRCGrhOlo-Ld4-X_YMWmlBq540P7aoc&channelId=UCVHFbqXqoYvEWM1Ddxl0QDg
-     */
+    */
 
 
     @GET("search")
